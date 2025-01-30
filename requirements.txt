@@ -1,0 +1,6 @@
+telethon
+pandas
+numpy 
+dotenv
+psycopg2
+sqlalchemy

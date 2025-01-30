@@ -1,0 +1,34 @@
+2025-01-30 14:04:56,730:INFO:Starting data cleaning process...
+2025-01-30 14:04:56,732:ERROR:Error during data cleaning: [Errno 2] No such file or directory: '..data/telegram_data.csv'
+2025-01-30 14:05:11,103:INFO:Starting data cleaning process...
+2025-01-30 14:06:11,920:INFO:Starting data cleaning process...
+2025-01-30 14:09:29,969:INFO:Starting data cleaning process...
+2025-01-30 14:12:12,001:INFO:Starting data cleaning process...
+2025-01-30 14:15:22,920:INFO:Starting data cleaning process...
+2025-01-30 14:15:31,983:INFO:Starting data cleaning process...
+2025-01-30 14:18:50,225:INFO:Starting data cleaning process...
+2025-01-30 14:43:52,977:INFO:\u2705 CSV file '../data/telegram_data.csv' loaded successfully.
+2025-01-30 14:44:19,967:INFO:\u2705 Duplicates removed from dataset.
+2025-01-30 14:44:19,978:INFO:\u2705 Date column formatted to datetime.
+2025-01-30 14:44:19,980:INFO:\u2705 Missing values filled.
+2025-01-30 14:44:20,018:INFO:\u2705 Text columns standardized.
+2025-01-30 14:44:20,118:INFO:\u2705 Emojis extracted and stored in 'emoji_used' column.
+2025-01-30 14:44:20,228:INFO:\u2705 YouTube links extracted and stored in 'youtube_links' column.
+2025-01-30 14:44:20,233:INFO:\u2705 Data cleaning completed successfully.
+2025-01-30 14:51:30,360:INFO:\u2705 Cleaned data saved successfully to '../data/cleaned_telegram_data.csv'.
+2025-01-30 14:53:34,552:INFO:\u2705 Duplicates removed from dataset.
+2025-01-30 14:53:34,566:INFO:\u2705 Date column formatted to datetime.
+2025-01-30 14:53:34,568:INFO:\u2705 Missing values filled.
+2025-01-30 14:53:34,601:INFO:\u2705 Text columns standardized.
+2025-01-30 14:53:34,722:INFO:\u2705 Emojis extracted and stored in 'emoji_used' column.
+2025-01-30 14:53:34,903:INFO:\u2705 YouTube links extracted and stored in 'youtube_links' column.
+2025-01-30 14:53:34,916:INFO:\u2705 Data cleaning completed successfully.
+2025-01-30 15:07:49,182 - INFO - CSV file '../data/telegram_data.csv' loaded successfully.
+2025-01-30 15:07:49,223 - INFO - Duplicates removed from dataset.
+2025-01-30 15:07:49,241 - INFO - Date column formatted to datetime.
+2025-01-30 15:07:49,243 - INFO - Missing values filled.
+2025-01-30 15:07:49,272 - INFO - Text columns standardized.
+2025-01-30 15:07:49,469 - INFO - Emojis extracted and stored in 'emoji_used' column.
+2025-01-30 15:07:49,833 - INFO - YouTube links extracted and stored in 'youtube_links' column.
+2025-01-30 15:07:49,857 - INFO - Data cleaning completed successfully.
+2025-01-30 15:07:50,062 - INFO - Cleaned data saved successfully to '../data/cleaned_telegram_data.csv'.
