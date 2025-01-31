@@ -4,3 +4,5 @@ numpy
 python-dotenv
 psycopg2
 sqlalchemy
+dbt
+dbt-postgres
