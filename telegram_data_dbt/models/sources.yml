@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw data from the source system."
+    schema: public
+    tables:
+      - name: telegram_messages
+        description: "Raw table from the source system."
+        columns:
+          - name: oid
+            description: "The unique identifier for a message."
+          - name: channel_title
+            description: "The channel name."
+          - name: channel_username
+            description: "username used by the telegram channel."
+          - name: message-id
+            description: "A unique id identfying each message."
+          - name: message
+            description: "An actual message."
+          - name: message_date
+            description: "A date the message was shared."
+          - name: media_path
+            description: "A path to where the media is stored."
+          - name: emoji_used
+            description: "emojis used in the message."
+          - name: youtube_links
+            description: "A link to a youtube video."
