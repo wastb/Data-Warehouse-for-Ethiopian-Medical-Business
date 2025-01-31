@@ -1,6 +1,6 @@
 telethon
 pandas
 numpy 
-dotenv
+python-dotenv
 psycopg2
 sqlalchemy
