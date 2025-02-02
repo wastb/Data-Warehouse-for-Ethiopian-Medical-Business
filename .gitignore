@@ -2,3 +2,4 @@
 .env
 /.venv
 /data
+/yolov5/detection_results.csv

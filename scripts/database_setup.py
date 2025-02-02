@@ -69,9 +69,65 @@ def create_table(engine):
         logging.error(f"Error creating table: {e}")
         raise
 
+import logging
+from sqlalchemy import create_engine, text
+
+def create_table_yolo(engine):
+    """ Create yolo_detection table if it does not exist. """
+    create_table_query = """
+    CREATE TABLE IF NOT EXISTS yolo_detection (
+        id SERIAL PRIMARY KEY,
+        Image TEXT,
+        Class_Id INTEGER,
+        Confidence FLOAT,
+        X_center FLOAT,
+        Y_center FLOAT,
+        Width FLOAT,
+        Height FLOAT
+    );
+    """
+    try:
+        with engine.connect().execution_options(isolation_level="AUTOCOMMIT") as connection:
+            connection.execute(text(create_table_query))
+        logging.info("Table 'yolo_detection' created successfully.")
+    except Exception as e:
+        logging.error(f"Error creating table: {e}")
+        raise
+
+def insert_data_yolo(engine, cleaned_df):
+    """ Inserts YOLO detection data into PostgreSQL database. """
+    try:
+        insert_query = """
+        INSERT INTO yolo_detection 
+        (Image, Class_Id, Confidence, X_center, Y_center, Width, Height) 
+        VALUES (:Image, :Class_Id, :Confidence, :X_center, :Y_center, :Width, :Height);
+        """
+
+        with engine.begin() as connection:  # ✅ Auto-commit enabled
+            for _, row in cleaned_df.iterrows():
+                # Debug log to ensure data is being inserted correctly
+                logging.info(f"Inserting: {row['Image']} with Class ID: {row['Class_Id']}")
+
+                connection.execute(
+                    text(insert_query),
+                    {
+                        "Image": row["Image"],
+                        "Class_Id": row["Class_Id"],
+                        "Confidence": row["Confidence"],
+                        "X_center": row["X_center"],
+                        "Y_center": row["Y_center"],
+                        "Width": row["Width"],
+                        "Height": row["Height"]
+                    }
+                )
+
+        logging.info(f"{len(cleaned_df)} records inserted into 'yolo_detection' table.")
+    except Exception as e:
+        logging.error(f"Error inserting data: {e}")
+        raise
 
 def insert_data(engine, cleaned_df):
-    """ Inserts cleaned Telegram data into PostgreSQL database. """
+    """ Inserts Message data into PostgreSQL database. """
     try:
         # Convert NaT timestamps to None (NULL in SQL)
         cleaned_df["message_date"] = cleaned_df["message_date"].apply(lambda x: None if pd.isna(x) else str(x))
@@ -106,4 +162,3 @@ def insert_data(engine, cleaned_df):
     except Exception as e:
         logging.error(f"Error inserting data: {e}")
         raise
-
