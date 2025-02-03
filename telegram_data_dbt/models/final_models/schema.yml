@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+  - name: telegram_metrics
+    description: "A starter dbt model"
+    columns:
+      - name: total_messages
+        description: "The total number of messages in the dataset"
+        data_tests:
+          - not_null
+      - name: total_media_messages
+        description: "The total number of messages with media in the dataset"
+        data_tests:
+          - not_null
+      - name: messages_with_youtube_links
+        description: "The total number of messages with Youtube Links in the dataset"
+        data_tests:
+          - not_null
+      - name: messages_with_emoji
+        description: "The total number of messages with emoji in the dataset"
+        data_tests:
+          - not_null
+
+

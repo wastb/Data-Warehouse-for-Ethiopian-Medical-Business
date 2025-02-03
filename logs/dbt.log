@@ -1,0 +1,31 @@
+[0m11:46:48.588005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF51D0910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF70A17B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF70A15A0>]}
+
+
+============================== 11:46:48.596159 | 5dab07fd-dfc5-4a3a-bebf-3fee6b511f24 ==============================
+[0m11:46:48.596159 [info ] [MainThread]: Running with dbt=1.9.2
+[0m11:46:48.596159 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Wasihun\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:46:48.616618 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object.. Dictionary: {'dir': WindowsPath('C:/Users/Wasihun/.dbt')}
+[0m11:46:48.619095 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:46:58.694166 [debug] [MainThread]: Starter project path: D:\Personal Files\KIAM Notebooks\KIAM-Week7\.venv\lib\site-packages\dbt\include\starter_project
+[0m11:46:58.838150 [info ] [MainThread]: 
+Your new dbt project "telegram_data_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:46:58.839589 [info ] [MainThread]: Setting up your profile.
+[0m11:48:07.889586 [info ] [MainThread]: Profile telegram_data_dbt written to C:\Users\Wasihun\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:48:07.889586 [debug] [MainThread]: Command `dbt init` succeeded at 11:48:07.889586 after 79.41 seconds
+[0m11:48:07.889586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF51D0910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF70A1570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DEF448D7E0>]}
+[0m11:48:07.889586 [debug] [MainThread]: Flushing usage events
+[0m11:48:08.773275 [debug] [MainThread]: An error was encountered while trying to flush usage events

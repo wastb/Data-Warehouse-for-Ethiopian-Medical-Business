@@ -5,4 +5,7 @@ python-dotenv
 psycopg2
 sqlalchemy
 fastapi
+fastapi
 uvicorn
+dbt
+dbt-postgres
