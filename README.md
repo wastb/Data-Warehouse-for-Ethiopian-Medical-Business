@@ -23,8 +23,49 @@ This project was initiated by Kara Solutions, a leading data science company wit
 - Enrich scraped data by integrating multiple data sources.
 - Implement pipelines to continuously update the data warehouse.
 
-## Conclusion
-The first two tasks of the project are completed:
-- Medical data, including media, has been scraped from five different Telegram channels.
-- The scraped data has been loaded into a PostgreSQL database.
-- DBT has been successfully configured.
+## Installation
+
+### 1. Clone the Repository
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/wastb/Data-Warehouse-for-Ethiopian-Medical-Business
+cd EthioMedDataWarehouse
+```
+
+### 2. Install Dependencies
+You will need to install the required dependencies for data scraping, processing, and object detection:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Set Up Database
+Make sure you have PostgreSQL installed and create a new database for the project:
+
+```bash
+CREATE DATABASE telegram_raw;
+```
+
+### 4. Set Up YOLO Environment
+Clone the YOLOv5 repository and install the necessary dependencies:
+
+```bash
+git clone https://github.com/ultralytics/yolov5.git
+cd yolov5
+pip install -r requirements.txt
+```
+
+### 5. Running the Project
+You can run individual scripts for different tasks (scraping, data processing, etc.):
+
+```bash
+python src/scraping/telegram_scraper.py
+```
+## Contact Information
+
+- **Name**: Wasihun Tesfaye
+- **Email**: [wasihunpersonal@gmail.com](mailto:wasihunpersonal@gmail.com)
+- **LinkedIn**: [LinkedIn](https://www.linkedin.com/in/wasihunt/)
+
+
